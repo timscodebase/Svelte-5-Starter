@@ -1,0 +1,12 @@
+:root {
+  color-scheme: dark light;
+
+  --green: hsl(120, 72%, 52%);
+  --black: hsl(0, 0%, 10%);
+  --white: hsl(0, 3%, 94%);
+
+  --bg: var(--black);
+  --fg: var(--white);
+
+  --accent: var(--green);
+}

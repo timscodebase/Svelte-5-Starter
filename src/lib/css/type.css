@@ -1,0 +1,10 @@
+:root {
+  --font: system-ui, sans-serif;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.5;
+}

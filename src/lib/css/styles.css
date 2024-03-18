@@ -1,0 +1,12 @@
+@import 'reset.css';
+@import 'type.css';
+@import 'vars.css';
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+}
