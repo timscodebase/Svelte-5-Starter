@@ -7,16 +7,16 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	},
+	}
 
 	// This is a global declaration
 	// If you only want to to work on a specific file, you can use:
 	//   `<svelte:options runes={true} />`
 	// at the top of a page or component
 	// https://arc.net/l/quote/qrrotimv
-	compilerOptions: {
-		runes: true
-	}
+	// compilerOptions: {
+	// 	runes: true
+	// }
 }
 
 export default config
