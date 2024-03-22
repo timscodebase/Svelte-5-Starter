@@ -1,3 +1,15 @@
+<a href="https://github.com/timscodebase/Svelte-5-Starter/tree/main">
+<img src="./static/banner.png" alt="thubnail">
+</a>
+<p align="center">
+  <a href="#-features"><strong>Features</strong></a> ·
+  <a href="#-deployment"><strong>Deployment</strong></a> ·
+  <a href="#-getting-started"><strong>Getting started</strong></a> ·
+  <a href="#%EF%B8%8F-scripts-overview"><strong>Scripts overview</strong></a> ·
+  <a href="#-contribution"><strong>Contribution</strong></a> ·
+  <a href="#%EF%B8%8F-support"><strong>Support</strong></a>
+</p>
+
 # Svelte 5 Starter
 
 This is a simple starter template for Svelte 5. It includes a basic setup for a Svelte 5 project with a simple component and a simple store. The template alo features TailwindCSS for styling.
@@ -8,9 +20,9 @@ This is a simple starter template for Svelte 5. It includes a basic setup for a 
 📘 Typescript
 🎨 TailwindCSS - Class sorting, merging and linting
 🛠️ Shadcn/ui - Customizable UI components
-🔒 Next-auth - Easy authentication library for Next.js (GitHub provider)
+🔒 @auth/sveltekit - Easy authentication library for Next.js (GitHub provider)
 🛡️ Prisma - ORM for node.js
-📋 React-hook-form - Manage your forms easy and efficient
+📋 sveltekit-superforms - Manage your forms easy and efficient
 🔍 Zod - Schema validation library
 🧪 Jest & React Testing Library - Configured for unit testing
 🎭 Playwright - Configured for e2e testing
@@ -26,48 +38,11 @@ This is a simple starter template for Svelte 5. It includes a basic setup for a 
 ⚙️ T3-env - Manage your environment variables
 💯 Perfect Lighthouse score
 
-<a href="https://next-starter-skolaczk.vercel.app/">
-<img src="https://github.com/Skolaczk/next-starter/assets/76774237/44b552ff-43aa-441f-b1d0-de9bdfc2a73f" alt="thubnail">
-</a>
-<p align="center">
-  <a href="#-features"><strong>Features</strong></a> ·
-  <a href="#-deployment"><strong>Deployment</strong></a> ·
-  <a href="#-getting-started"><strong>Getting started</strong></a> ·
-  <a href="#%EF%B8%8F-scripts-overview"><strong>Scripts overview</strong></a> ·
-  <a href="#-contribution"><strong>Contribution</strong></a> ·
-  <a href="#%EF%B8%8F-support"><strong>Support</strong></a>
-</p>
-
-## 🎉 Features
-
-- 🚀 Next.js 14 (App router)
-- ⚛️ React 18
-- 📘 Typescript
-- 🎨 TailwindCSS - Class sorting, merging and linting (alpha 4)
-- 🛠️ Shadcn/ui - Customizable UI components (shadcn-svelte)
-- 🔒 @auth/sveltekit - SvelteKit Auth is the official SvelteKit integration for Auth.js.
-- 🛡️ Prisma - ORM for node.js
-- 📋 React-hook-form - Manage your forms easy and efficient
-- 🔍 Zod - Schema validation library
-- 🧪 Jest & React Testing Library - Configured for unit testing
-- 🎭 Playwright - Configured for e2e testing
-- 📈 Absolute Import & Path Alias - Import components using `@/` prefix
-- 💅 Prettier - Code formatter
-- 🧹 Eslint - Code linting tool
-- 🐶 Husky & Lint Staged - Run scripts on your staged files before they are committed
-- 🔹 Icons - From Lucide
-- 🌑 Dark mode - With next-themes
-- 🗺️ Sitemap & robots.txt - With next-sitemap
-- 📝 Commitlint - Lint your git commits
-- 🤖 Github actions - Lint your code on PR
-- ⚙️ T3-env - Manage your environment variables
-- 💯 Perfect Lighthouse score
-
 ## 🚀 Deployment
 
-Easily deploy your Next.js app with <a href="https://vercel.com/">Vercel</a> by clicking the button below:
+Easily deploy your Sveltekit app with <a href="https://vercel.com/">Vercel</a> by clicking the button below:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Skolaczk/next-starter)
+[![Deploy with Vercel](https://vercel.com/button)](https://github.com/timscodebase/Svelte-5-Starter.git)
 
 ## 🎯 Getting started
 
@@ -75,24 +50,18 @@ Easily deploy your Next.js app with <a href="https://vercel.com/">Vercel</a> by 
 
 1. Using this repository as template
 
-   ![use-this-template-button](https://github.com/Skolaczk/next-starter/assets/76774237/f25c9a29-41de-4865-aa38-c032b9346169)
+   ![use-this-template-button](https://github.com/new?template_name=Svelte-5-Starter&template_owner=timscodebase)
 
-2. Using `create-next-app`
-
-   ```bash
-   npx create-next-app -e https://github.com/Skolaczk/next-starter my-project-name
-   ```
-
-3. Using `git clone`
+2. Using `git clone`
 
    ```bash
-   git clone https://github.com/Skolaczk/next-starter my-project-name
+   git clone https://github.com/timscodebase/Svelte-5-Starter.git my-project-name
    ```
 
 ### 2. Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 3. Set up environment variables
@@ -104,7 +73,7 @@ Create `.env` file and set env variables from `.env.example` file.
 It is required if you want husky to work
 
 ```bash
-npm run prepare
+pnpm run prepare
 ```
 
 ### 5. Run the dev server
@@ -112,29 +81,7 @@ npm run prepare
 You can start the server using this command:
 
 ```bash
-npm run dev
-```
-
-and open <http://localhost:3000/> to see this app.
-
-## 📁 Project structure
-
-```bash
-.
-├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
-├── prisma                          # Prisma schema and migrations
-├── public                          # Public assets folder
-└── src
-    ├── __tests__                   # Unit and e2e tests
-    ├── actions                     # Server actions
-    ├── app                         # Next JS App (App Router)
-    ├── components                  # React components
-    ├── hooks                       # Custom hooks
-    ├── lib                         # Functions and utilities
-    ├── styles                      # Styles folder
-    ├── types                       # Type definitions
-    └── env.mjs                     # Env variables config file
+pnpm run dev
 ```
 
 ## ⚙️ Scripts overview
@@ -171,4 +118,4 @@ To contribute, please follow these steps:
 
 If you liked the project, I will appreciate if you leave a star. 🌟😊
 
-Made by <a href="https://michalskolak.netlify.app/">Michał Skolak</a>
+Made by <a href="https://timsmith.tech">Tim Smith</a>
