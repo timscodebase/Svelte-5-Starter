@@ -1,12 +1,26 @@
 :root {
-  color-scheme: dark light;
+	color-scheme: dark light;
 
-  --green: hsl(120, 72%, 52%);
-  --black: hsl(0, 0%, 10%);
-  --white: hsl(0, 3%, 94%);
+	--green: hsl(120, 72%, 52%);
+	--black: hsl(0, 0%, 10%);
+	--white: hsl(0, 3%, 94%);
 
-  --bg: var(--black);
-  --fg: var(--white);
+	--bg: var(--black);
+	--fg: var(--white);
 
-  --accent: var(--green);
+	--accent: var(--green);
+}
+
+@media (prefers-color-scheme: light) {
+	root {
+		--bg: var(--white);
+		--fg: var(--black);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--black);
+		--fg: var(--white);
+	}
 }

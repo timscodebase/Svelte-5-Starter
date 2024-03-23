@@ -1,6 +1,7 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
+	import '$lib/css/styles.css'
 	import { signIn, signOut } from '@auth/sveltekit/client'
 
 	let password = $state('')
@@ -30,3 +31,5 @@
 		</div>
 	</div>
 </nav>
+
+<slot />
